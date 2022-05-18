@@ -13,8 +13,14 @@ export default {
   components: {
     HelloWorld
   },
+  beforeMount() {
+    console.log('[App.vue] beforeMount');
+  },
   mounted() {
     console.log('[App.vue] mounted');
+  },
+  beforeUnmount() {
+    console.log('[App.vue] beforeUnmount');
   },
   unmounted() {
     console.log('[App.vue] unmounted');
