@@ -1,7 +1,8 @@
+/* eslint-disable no-debugger */
+/* eslint-disable no-unused-vars */
 import { createSSRApp } from 'vue'
 import App from './App.vue'
 
-console.log('[main.js]');
 const app = createSSRApp(App);
 app.mount('#app');
 setTimeout(() => {
